@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <style>
+    img{ width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;}
+  </style>
+  <meta charset="UTF-8">
+  <title>< Comparison> </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="first_line_color">
+    <div class="row">   
+      <div class="col-md-6">    
+        <div class="first_line" >
+         <div class="div1">
+           <h1>Latitude</h1> 
+          </div>
+        </div>    
+      </div>
+      <ul class="nav justify-content-end">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="assets/images/City Latitude vs. Max Temperature_08.23.20.png">Max Temperature</a>
+                    <a class="dropdown-item" href="assets/images/City Latitude vs. City Humidity 08.23.20.png">Humidity</a>
+                    <a class="dropdown-item" href="assets/images/City Latitude vs. Cloudiness 8.23.20.png">Cloudiness</a>
+                    <a class="dropdown-item" href="assets/images/City Latitude vs. Wind Speed 08.23.20.png">Wind-speed</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Comparison.html"> Comparison</a>
+              </li>
+                <li class="nav-link">
+                <div class="col-md-2"> 
+                  <button>
+                    <a class="nav-link" href="mydata.html">Data</a>
+                  </button>
+                </div> 
+              </li>
+              <li class="nav-link">
+              </li>               
+            </ul>      
+          </div>            
+        </nav>
+      </ul> 
+    </div>
+        <main class="comparison_container">
+          <header>
+            <h1>Comparison: Lattitude vs. X</h1>
+          </header>
+          <p><indent>hover your mouse over any plot to get an in-depth analysis of the plot.</indent></p>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">              
+              <a href="./assets/images/City Latitude vs. Max Temperature_08.23.20.png"> 
+                <figcaption style="text-align: center;font-size: 150%">vs. Max. Temperature</figcaption>
+                <img src="./assets/images/City Latitude vs. Max Temperature_08.23.20.png" alt="Latitude_Max_Temperature">
+                <figcaption style="text-align:center;">
+                Some observations to note regarding this figure are first what we are looking at is esssentially
+                a plot depicting some 500+ cities and on a specific date listed in the title, the max temperature in those 
+                cities identified here by their latitudes (although without a longitude coordinate the city wouldn't exist.)
+                What stands out is the maximum temperatures in regards to the equator, 0 degress latitude, the center or the 
+                dividing point of the no`rthern and southern Hemispheres. With that being said, much can be extrapolated here.  
+                Around the equator we see what I would say is a cluster of the higher end of the max temperatures and that is 
+                the case (excluding outliers) for about 30 degrees north and south of the equator. These max temps, although the
+                exact values are in our data in weather_df.html, seem to range from the high 60's to approximately 90 degrees (F),
+                an intelligent visually based assumption using the plot as my reference. There are some rather high, but only few 
+                in nummber max temperatures around -20 to -40 degrees latitude, as well as some low outliers around -10 to -30 deg
+                latitude.  What is interesting is that we see a continual and clustered decreasing trend as move north of the equator,
+                into the postitive values on the x-axis, that seems to continually decrease although widenes in latitudinal range 
+                from approximately 25 deg tp 80 deg latitude.  I is interesting to see this trend which doesn't occur to the South of 
+                the equator when speaking about the cities we are looking at. So it would be a safe and sound assumption to say more 
+                of the sample were cities in the Northern Hemispher and that these particular locales get colder as we move further north.
+                Some of the maximum temperatures are bewo 50 degrees and declining quickly.  The cities may have been chosen to establish this
+                based on the plot and hence this pattern? That will never be known.
+                </figcaption> 
+              </a>    
+            </div>
+
+
+            <div class="col-sm-6 col-md-6 col-lg-6">    .                     
+              <a href="./assets/images/City Latitude vs. Cloudiness 8.23.20.png">
+                <figcaption style="text-align: center;font-size: 150%">vs. Cloudiness</figcaption>
+                <img src="./assets/images/City Latitude vs. Cloudiness 8.23.20.png" alt="Latitude_Cloudiness" >
+                <figcaption style="text-align:center;">
+                In this figure we are looking at the Cloudiness at specific cities whose location is given by a series
+                of latitudinal and logitudinal coordinates. This is esssentially a plot depicting some 500+ cities and on a specific date 
+                listed in the title, the cloudiness in those cities identified here by their latitudes, although without a longitude coordinate 
+                the city wouldn't exist.  Unlike the Max. Temperature plot, there is not many observations to be made here.  We see cities/dots  
+                representded all over the graph.  This tells us that the distribution of the dots/cities and how their respective Latitudinal 
+                coordinates corelates to that day's cloudiness and in This case we make any intelligible comments about the data represented 
+                here, with exception that maybe there is no corelation between a cities latitude and it's Cloudiness. 
+                </figcaption>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <a href="./assets/images/City Latitude vs. City Humidity 08.23.20.png">
+                <figcaption style="text-align: center;font-size: 150%">vs. Humidity</figcaption> 
+                <img src="./assets/images/City Latitude vs. City Humidity 08.23.20.png" alt="Latitude_Humidity"> 
+                <figcaption>I
+                In this figure we are looking at the Humidity on a dat within specific cities whose location is given by a series
+                of latitudinal and logitudinal coordinates. This is esssentially a plot depicting one specific date in some 500+ cities      
+                listed in the title, the humidity in those cities identified here by their latitudes.  Unlike the Max Temperature plot and more 
+                like the Cloudiness plot, the data doesn't tell us that much.  Humidity mapped against latitude gives us a rather uninterestin plot.
+                We sethe majority of cites around -40 deg to the south and to the north at approximately 75 deg latitude. That is one notable point but 
+                also see that the majority of the cities have somewhere between 60% and 100% humidity. Yes many cities have lower humidities on this day
+                but the MAJORITY is what we are concerned with.  Other cities have from 60% and decreasingly less cities have decreasing %humidities, 
+                these however may be considered outliers, meaning they don't fit the general pattern which in this case isn't much of pattern.  Some of 
+                these outliers fall to 0% humidity.  I'd love to experience what that is like, wouldn't you. So, again, we aren't given the best data here.
+                One conclusion is that most of these cities on this day are experiencing a rather high % of humidity.
+                </figcaption>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <a href="./assets/images/City Latitude vs. Wind Speed 08.23.20.png">
+                <figcaption style="text-align: center;font-size: 150%">vs. Wind-speed</figcaption>
+                <img src="./assets/images/City Latitude vs. Wind Speed 08.23.20.png" alt="Latitude_Humidity"> 
+                <figcaption>
+                In Similar fashion to the Cloudiness and the Humidity plots, there is not many, if any interesting observations
+                to be made here regarding the correlation between the cities Latitudes and Wind-Speed at the locations. I see that the 
+                majority of the cities have rather low wind speeds on this date.  Since there is no such thing as a negative wind speeds 
+                we see that all the values are positive, or else we would be being sucked into some vacuum.  Most cities represented here 
+                have wind-speeds of a typical day, inclement weather exempt, although I am not a meteorologist.  It seems the vast majority 
+                of cities have wind-speeds between 0-15 mph maybe pushing the higher end up to 20 and saying those above are outliers.  
+                We see no correlation between wind-speed and Latitude using this plot and these cities on this day.
+                </figcaption> 
+
+              </a>
+            </div>
+                  
+          </div>
+      
+        </main>                
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+  </body>
+                
+</html>              

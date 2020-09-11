@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <style>
+        img{ width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;}
+    </style>
+
+    <meta charset="UTF-8">
+    <title>index</title>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+ 
+  
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+      <div id="first_line_color">
+        <div class="row">   
+                <!-- <div class="form-inline">   -->
+                <div class="col-md-6">    
+
+                        <div class="first_line" >
+                            <div class="div1"><h1>Latitude</h1> </div>
+                        </div>    
+                </div>  
+                
+                <div class="col-md-2">     
+                    <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="assets/images/City Latitude vs. Max Temperature_08.23.20.png">Max Temperature</a>
+                            <a class="dropdown-item" href="assets/images/City Latitude vs. City Humidity 08.23.20.png">Humidity</a>
+                            <a class="dropdown-item" href="assets/images/City Latitude vs. Cloudiness 8.23.20.png">Cloudiness</a>
+                            <a class="dropdown-item" href="assets/images/City Latitude vs. Wind Speed 08.23.20.png">Wind-speed</a>
+                        </div>
+                        </div>
+                </div>  
+
+                <div class="col-md-2">  
+                    <form>
+                       <input class="MyButton1" type="button" value="Comparison" onclick="window.location.href='Comparison.html'" />       
+                    </form>
+                </div> 
+
+                <div class="col-md-2">
+                      <form>
+                            <input class="MyButton2" type="button" value="data" onclick="window.location.href='mydata.html'" />       
+                      </form>
+    <!-- <button type="button" href="data.html"> <a class="dropdown-item" href="https://www.youtube.com">Data</a> </button> --> 
+                </div>
+        </div>
+<!-- </div> -->
+     </div>
+<br>
+
+
+<div class="Col_container">
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+      
+      
+      <div class="col-md-8">
+        <!-- <div class="box skyblue"> -->
+
+          <main class="container1">
+            <header>
+                <h1>Summary: Lattitude vs. X</h1>
+            </header>
+                <section id="introduction">
+                    <figure id="main_figure">
+                      
+                      <img  id="main_fig" src="./assets/images/City Latitude vs. Max Temperature_08.23.20.png" alt="latitude_Max-Temperature" style="width:300px;height:300px;float:left">
+                    </figure>
+            <p>
+            The purpose of these plots which come from a previously conducted weather analysis using data from a plethora of locations. We studied at that time what was the current weather conditions all over 
+            the world. We randomly chose a minimum of 500 cities 
+            using these cities locations via their latitude and longitude coordinates. We used API calls
+            to acquire this weather data from https://openweathermap.org/api, from this point we analyzed and manipulated the data,
+            and made the weather data into DataFrames, which are essentially tables with rows and columns with given column headers
+            like Maximum Temperature, Humidity, Cloudiness, and Wind Speed. We then used the Data at our hands to nmake these plots 
+            you see in front of you.  Patterns may be observed as we analyze these cities' latiudinal and logitudinal coordinates to
+            draw some conclusions about the dependence of weather in relation to these coordinates and hence the proximity to the equator, etc.
+            </p>
+            
+            <p> 
+            Here we presented the results in a web visualization dashboard. 
+            This is a user-friendly way to access the results we reached in our analysis. For further technique detailes, please 
+            inquire regarding more detailed information regarding our weather analysis project where we used Python (a computer program) and Jupyter Notebook 
+            to serve as our program to code in, Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations 
+            and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, 
+            and much more.       
+            </p>
+        </section>
+      </main> 
+
+      </div>
+      <!-- </div> -->
+      
+      
+      <div class="col-md-4">
+          
+                <main class="container2">
+                    <header>
+                        <h2>Visualizations</h2>
+                    </header>
+                <!--Normally these medium columns go full wide on small screen sizes-->
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-md-6">
+                      <figure id="main1_figure">
+                          <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                        <a href="./assets/images/City Latitude vs. Max Temperature_08.23.20.png">
+
+                          <img src="./assets/images/City Latitude vs. Max Temperature_08.23.20.png" alt="Latitude_Max-Temperature" style="width:150px;height:150px;">
+                        </a>
+                        </figure>
+            
+                  </div>
+                  <div class="col-xs-3 col-sm-3 col-md-6">
+                      <figure id="main1_figure">
+                          <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                          <a href="./assets/images/City Latitude vs. City Humidity 08.23.20.png">
+                          <img src="./assets/images/City Latitude vs. City Humidity 08.23.20.png" alt="Latitude_Cloudiness" style="width:150px;height:150px;">
+                          </a>
+                        </figure>
+                  </div>
+                <!-- </div> -->
+
+                <!-- <div class="row"> -->
+                    <div class="col-xs-3 col-sm-3 col-md-6">
+                        <figure id="main1_figure">
+                            <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                            <a href="./assets/images/City Latitude vs. Cloudiness 8.23.20.png">
+                            <img   src="./assets/images/City Latitude vs. Cloudiness 8.23.20.png" alt="latitude_humidity" style="width:150px;height:150px;">
+                            </a>  
+                        </figure>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-6">
+                        <figure id="main1_figure">
+                            <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                            <a href="./assets/images/City Latitude vs. Wind Speed 08.23.20.png">
+
+                            <img  src="./assets/images/City Latitude vs. Wind Speed 08.23.20.png" alt="Latitude_Wind-Speed" style="width:150px;height:150px;">
+                            </a>  
+                        </figure>
+                    </div>
+                  </div>
+                  </main>
+           
+            
+      </div>
+    </div>
+
+        
+        
+        <br><br>
+<!-- <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name"> -->
+
+
+ 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
+</body>
+</html>
